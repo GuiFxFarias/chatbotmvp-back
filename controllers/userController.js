@@ -47,6 +47,7 @@ class UserController {
       const expiration = new Date(Date.now() + 1000 * 60 * 60);
 
       res.cookie('token', token, {
+        httpOnly: false,
         secure: process.env.NODE_ENV === 'production',
         sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
         path: '/',
