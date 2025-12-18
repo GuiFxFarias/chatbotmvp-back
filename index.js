@@ -8,7 +8,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://power-moendas-front.vercel.app'],
+    origin: [
+      'http://localhost:3000',
+      'https://chatbotmvp-back-production.up.railway.app',
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
   })
