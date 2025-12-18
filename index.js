@@ -8,10 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: [
-      'http://localhost:3000',
-      'https://chatbotmvp-back-production.up.railway.app',
-    ],
+    origin: ['http://localhost:3000', 'https://chatbotmvp-bay.vercel.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
   })
