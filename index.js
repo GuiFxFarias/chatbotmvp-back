@@ -8,7 +8,11 @@ const app = express();
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'https://chatbotmvp-bay.vercel.app'],
+    origin: [
+      'http://localhost:3000',
+      'https://chatbotmvp-bay.vercel.app',
+      'https://guifariasstatum.app.n8n.cloud/webhook/send-message',
+    ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
   })
