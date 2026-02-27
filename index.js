@@ -15,7 +15,7 @@ app.use(
     ],
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     credentials: true,
-  })
+  }),
 );
 
 // app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
